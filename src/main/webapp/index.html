@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📚 Online Book Store</h1>
+
+<input type="text" id="search" placeholder="Search books...">
+
+<select id="categoryFilter">
+  <option value="all">All</option>
+  <option value="Fiction">Fiction</option>
+  <option value="Tech">Tech</option>
+  <option value="Self">Self Help</option>
+  <option value="Biography">Biography</option>
+  <option value="Spiritual">Spiritual</option>
+  <option value="Mystery">Mystery</option>
+  <option value="History">History</option>
+  <option value="Education">Education</option>
+  <option value="Cooking">Cooking</option>
+  <option value="Health">Health</option>
+  <option value="Travel">Travel</option>
+</select>
+
+<div id="bookList"></div>
+
+<h2>🛒 Cart</h2>
+<div id="cart"></div>
+
+<button onclick="checkout()">Checkout</button>
+
+<script src="books.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

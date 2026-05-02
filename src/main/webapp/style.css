@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+/* HEADER */
+h1 {
+  text-align: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+  margin: 0;
+}
+
+/* FILTER BAR */
+#search, #categoryFilter {
+  padding: 10px;
+  margin: 15px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* GRID */
+#bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.book-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.book-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* TEXT */
+.book-card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}
+
+/* BUTTON */
+button {
+  padding: 8px 12px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* CART */
+#cart {
+  padding: 20px;
+  background: #fff;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#cart button {
+  margin-left: 10px;
+  background: #e74c3c;
+}
+
+#cart button:hover {
+  background: #c0392b;
+}
